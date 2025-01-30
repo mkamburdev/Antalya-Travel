@@ -1,0 +1,125 @@
+footer {
+  background: url('/assets/img/bg3.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--white);
+  text-align: center;
+  padding: 2rem 0;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  img {
+    width: 10rem;
+  }
+}
+
+.footer-menu {
+  a {
+    font-size: 1.3rem;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 1rem;
+
+    &:hover {
+      color: var(--primary);
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem 0;
+
+    li {
+      margin: 0.4rem auto;
+    }
+  }
+}
+
+.footer-social {
+  ul {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+
+  ul li {
+    margin: 0 1rem;
+
+    i {
+      font-size: 1.6rem;
+      color: var(--white);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--primary);
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  p {
+    font-size: 1.3rem;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 1rem;
+  }
+
+  span {
+    font-size: 1.3rem;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--white);
+    margin: 0 1rem;
+  }
+
+  a {
+    font-size: 1.3rem;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--white);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--primary);
+    }
+  }
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 585px) {
+  footer img {
+    width: 12rem;
+  }
+
+  .footer-menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2rem auto;
+    width: 50rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-menu {
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 2rem auto;
+      width: 50rem;
+    }
+  }
+}

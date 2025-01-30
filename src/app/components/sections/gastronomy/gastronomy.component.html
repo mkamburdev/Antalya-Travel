@@ -1,0 +1,20 @@
+<section class="section-4">
+  <div class="section-4-title">
+    <h3>Gastronomy</h3>
+    <h4>DISCOVER THE RICH FLAVORS OF ANTALYA</h4>
+  </div>
+  <div class="parent">
+    <ng-container *ngFor="let section of sections; let i = index">
+      <div class="div{{i * 2 + 1}}" *ngIf="i % 2 === 0">
+        <img [src]="section.image" [alt]="section.title + ' Image'">
+      </div>
+      <div class="div{{i * 2 + 2}}">
+        <h3>{{section.title}}</h3>
+        <p>{{section.description}}</p>
+      </div>
+      <div class="div{{i * 2 + 3}}" *ngIf="i % 2 !== 0">
+        <img [src]="section.image" [alt]="section.title + ' Image'">
+      </div>
+    </ng-container>
+  </div>
+</section>

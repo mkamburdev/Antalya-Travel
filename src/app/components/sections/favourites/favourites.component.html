@@ -1,0 +1,17 @@
+<section class="section-1">
+  <div class="section-1-title">
+    <h3>Our Favourites</h3>
+  </div>
+  <div class="section-1-cards">
+    <div class="section-1-card" *ngFor="let favourite of favourites">
+      <div class="card-img">
+        <img [src]="favourite.image" [alt]="favourite.title + ' Image'">
+      </div>
+      <div class="card-content">
+        <h4>{{favourite.title}}</h4>
+        <h5>{{favourite.category}}</h5>
+        <p>{{favourite.description}}</p>
+      </div>
+    </div>
+  </div>
+</section>

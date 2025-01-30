@@ -1,0 +1,131 @@
+.section-3 {
+  background: var(--white);
+  height: 100%;
+}
+
+.section-3-title {
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h3 {
+    font-size: 5.5rem;
+    text-align: center;
+    font-family: 'Corinthia', cursive;
+    font-weight: 100;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2rem 0;
+    font-family: var(--font-family);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: var(--black);
+  }
+}
+
+.section-3-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+  gap: 1.2rem;
+  width: 90%;
+  padding: 2rem 0;
+}
+
+.section-3-card {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+
+  &:hover {
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.164);
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  h5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-family: var(--font-family);
+    font-weight: 500;
+    color: var(--white);
+    text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Media Queries */
+@media screen and (min-width: 585px) {
+  .section-3-cards {
+    width: 50rem;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-3-cards {
+    width: 70rem;
+    gap: 2.3rem;
+  }
+
+  .section-3-card h5 {
+    font-size: 2.1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section-3-cards {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 93rem;
+    gap: 2.3rem;
+  }
+
+  .section-3-title {
+    h4 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: var(--black);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-3-cards {
+    width: 112rem;
+  }
+
+  .section-3-card h5 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .section-3-cards {
+    width: 130rem;
+  }
+}

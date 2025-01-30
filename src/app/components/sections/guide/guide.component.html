@@ -1,0 +1,16 @@
+<section class="section-2">
+  <div class="section-2-bg">
+    <div class="section-2-left">
+      <div class="infos">
+        <div class="info" *ngFor="let info of infos">
+          <span>{{info.value}}</span>
+          <p>{{info.label}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="section-2-right">
+      <h3>Antalya Guide</h3>
+      <p *ngFor="let text of guideText">{{text}}</p>
+    </div>
+  </div>
+</section>
