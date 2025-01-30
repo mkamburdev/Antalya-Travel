@@ -42,7 +42,7 @@ I hope this project can serve as a resource for other learners, and I welcome fe
 ![Desktop](https://i.imgur.com/2M5qiDE.png)
 
 ## Demo
-[https://antalya-travel.vercel.app/](https://antalya-travel.vercel.app/)
+[https://antalyatravel.vercel.app](https://antalyatravel.vercel.app)
 
 ## Development server
 
@@ -102,5 +102,5 @@ For more information on using the Angular CLI, including detailed command refere
 
 ## Author
 
-- E-mail - [mkambur@proton.me](mkambur@proton.me)
+- E-mail - [info@mkambur.com](info@mkambur.com)
 - LinkedIn - [@mkambur](https://linkedin.com/in/mkambur)
