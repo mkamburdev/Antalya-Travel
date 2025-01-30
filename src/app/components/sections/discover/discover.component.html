@@ -1,0 +1,14 @@
+<section class="section-3">
+  <div class="section-3-title">
+    <h3>Discover</h3>
+    <h4>A CAREFULLY CURATED GUIDE TO THE BEST OF ANTALYA</h4>
+  </div>
+  <div class="section-3-cards">
+    <div class="section-3-card" *ngFor="let card of cards">
+      <a href="#">
+        <img [src]="card.image" [alt]="card.title + ' Card Image'" width="400" height="400">
+        <h5>{{card.title}}</h5>
+      </a>
+    </div>
+  </div>
+</section>

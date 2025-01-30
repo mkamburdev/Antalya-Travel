@@ -1,0 +1,123 @@
+.section-4-title {
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h3 {
+    font-size: 5.5rem;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Corinthia', cursive;
+    font-weight: 100;
+    margin-top: 1rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0rem auto;
+    font-family: var(--font-family);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: var(--black);
+    margin-bottom: 4rem;
+  }
+}
+
+.parent {
+  display: grid;
+  grid-template-areas:
+    "div1"
+    "div2"
+    "div4"
+    "div3"
+    "div5"
+    "div6"
+    "div8"
+    "div7";
+  grid-template-columns: 1fr;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  h3 {
+    font-size: 6rem;
+    text-align: left;
+    margin: 1.5rem auto;
+    font-family: 'Corinthia', cursive;
+    font-weight: 100;
+    width: 85%;
+  }
+
+  p {
+    font-size: 1.7rem;
+    text-align: left;
+    margin: 3rem auto;
+    font-family: var(--font-family);
+    font-weight: 300;
+    width: 85%;
+  }
+
+  > div {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8 {
+  background: rgba(117, 222, 233, 0.51);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.158);
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  .parent {
+    display: grid;
+    grid-template-areas:
+      "div1 div2"
+      "div3 div4"
+      "div5 div6"
+      "div7 div8";
+    grid-template-columns: 35rem 35rem;
+    justify-content: center;
+
+    h3 {
+      margin: 1.5rem auto;
+      width: 85%;
+    }
+
+    p {
+      margin: 3rem auto;
+      width: 85%;
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .parent {
+    grid-template-columns: 45rem 45rem;
+  }
+}
+
+@media screen and (min-width: 1168px) {
+  .parent {
+    grid-template-columns: 55rem 55rem;
+
+    h3 {
+      font-size: 7rem;
+    }
+
+    p {
+      margin: 5rem;
+      width: 80%;
+      font-size: 2rem;
+    }
+  }
+}

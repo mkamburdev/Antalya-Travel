@@ -1,0 +1,28 @@
+<section>
+  <div class="section-5">
+    <div class="section-5-title">
+      <h3>Get in Touch</h3>
+      <h4>WE'RE HERE TO HELP!</h4>
+      <p>From itinerary suggestions to local insights and travel tips, we're here to ensure your trip is nothing short of extraordinary. Don't hesitate to drop us a line today and let us transform your Antalya dreams into a reality. We can't wait to hear from you!</p>
+    </div>
+    <div class="section-5-form">
+      <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <input type="text" placeholder="Full Name" [(ngModel)]="formData.fullName" name="fullName">
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Email Address" [(ngModel)]="formData.email" name="email">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Contact Number" [(ngModel)]="formData.contactNumber" name="contactNumber">
+        </div>
+        <div class="form-group">
+          <textarea cols="5" rows="5" placeholder="Message" [(ngModel)]="formData.message" name="message"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit">Send Enquiry</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
