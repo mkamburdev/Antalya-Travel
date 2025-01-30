@@ -1,5 +1,5 @@
 <div align="center">
-<img src ="./public/assets/img/logo.png" width="150px" alt="Antalya Travel">
+<img src ="./public/assets/img/Antalya-Travel.png" alt="Antalya Travel">
 </div>
 
 <div align="center">
@@ -8,9 +8,9 @@
 
 </div>
 
-This repository was created for the final project at Digital Career Institute (DCI). It contains all the code, documentation, and other resources needed for the project.
+This repository was created to enhance my Angular skills. It contains all the code, documentation, and other resources needed for the project.
 
-The project is the result of several days of hard work and showcases the skills I have acquired during my time at DCI. It exclusively uses HTML and CSS and has a responsive design that looks good on all devices.
+The project is the result of several days of hard work and showcases the skills I have acquired. It uses HTML, SCSS, Angular, TypeScript, and Vite, and has a responsive design that looks good on all devices.
 
 I hope this project can serve as a resource for other learners, and I welcome feedback and contributions.
 
